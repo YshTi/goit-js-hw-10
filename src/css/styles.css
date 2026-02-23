@@ -16,3 +16,108 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* ===== Task 1 Timer styles (override) ===== */
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+#datetime-picker {
+  width: 240px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[data-start]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ========================= */
+/* Task 2 – Promise Generator */
+/* ========================= */
+
+.form {
+  max-width: 480px;
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Only the top label (Delay), not the radio labels */
+.form>label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form input[type='number'] {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 2px solid #808080;
+  border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form input[type='number']:focus {
+  border-color: #007bff;
+}
+
+/* Fieldset box */
+.form fieldset {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #808080;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.form fieldset legend {
+  padding: 0 6px;
+  font-weight: 500;
+}
+
+/* Radios: circle + text on ONE line */
+.form fieldset label {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 0 16px;
+  white-space: nowrap;
+}
+
